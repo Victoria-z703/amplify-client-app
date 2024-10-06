@@ -1,0 +1,29 @@
+enum ClientSourceCategory {
+  PHONECALL   
+  WALK_IN     
+  INTRODUCTION 
+  OTHER
+}
+
+enum BusinessEngagement {
+  YES         
+  NO
+  PENDING
+}
+
+type ClientMng @model @auth(rules: [{allow: owner}]){
+  id: ID!
+  name: String!
+  phone: String!
+  address: String          
+  projectType: String    
+  email: String
+  visitDate: AWSDate
+  estimate: Float
+  clientSource: ClientSourceCategory
+  reference: String
+  inspector: String
+  inspectionDate: AWSDate
+  hasBusinessEngaged: BusinessEngagement
+  remark: String
+}

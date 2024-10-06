@@ -1,0 +1,153 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.client-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.full-width-textarea {
+  height: 80px;
+  grid-column: span 2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin: 20px 0; /* Space above and below */
+  grid-column: span 2; /* Span both columns in the form */
+}
+
+
+.add-client-button {
+  background-color: #258ac4; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.add-client-button:hover {
+  background-color: #0e6abb;
+}
+
+.download-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #798994; 
+  color: white; 
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #606a74;
+}
+
+.client-list-toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.client-list-title {
+  display: inline-block;
+  margin: 0;
+}
+
+.toggle-client-list-button {
+  background: none;
+  border: none;
+  color: #4c5252;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.client-list {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.client-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.client-item:last-child {
+  border-bottom: none;
+}
+
+.client-summary {
+  margin-bottom: 10px;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #258ac4; 
+  color: white; 
+}
+
+.edit-button:hover {
+  background-color: #386299;
+}
+
+.delete-button {
+  background-color: #e15349; 
+  color: white; 
+}
+
+.delete-button:hover {
+  background-color: #c62828;
+}
